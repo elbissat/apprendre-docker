@@ -3,5 +3,5 @@ WORKDIR /app
 COPY . /app
 RUN pip install -r requirements.txt
 EXPOSE 80
-ENV NOM coca
+ENV NOM EQUIPE
 CMD ["python", "app.py"]
