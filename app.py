@@ -15,10 +15,9 @@ def hello():
     except RedisError:
         visites = "<i>Erreur de connection Redis, compteur desactive</i>"
 
-    html = "<h3>Bonjour {nom}!</h3>" \
+    html = "<h2>Bonjour {nom}!</h2>" \
            "<b>Hostname:</b> {hostname}<br/>" \
-           "<b>Visites:</b> {visites} <br/>" \
-           "<p>Abonne toi!</p>"
+           "<b>Visites:</b> {visites} <br/>"
     return html.format(nom=os.getenv("NOM", "youtube"), hostname=socket.gethostname(), visites=visites)
 
 if __name__ == "__main__":
