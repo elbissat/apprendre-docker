@@ -2,15 +2,15 @@ version: "3"
 services:
   monapp:
     build: .
-    image: monimage
+    image: elbissat/monapp
     depends_on:
       - redis
     ports:
-      - "80:80"
+      - "8585:80"
     networks:
       - monreseau
     environment:
-      - NOM=les amis
+      - NOM=Ayouris
   redis:
     image: redis
     networks:
