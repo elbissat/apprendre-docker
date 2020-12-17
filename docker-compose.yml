@@ -10,7 +10,7 @@ services:
     networks:
       - monreseau
     environment:
-      - NOM=Ayouris
+      - NOM=EQUIPE
   redis:
     image: redis
     networks:
